@@ -2,7 +2,9 @@ package com.main.selenium.practices;
 
 import org.testng.annotations.Test;
 
-public class TestGroups {
+import com.main.selenium.test_components.BaseTest;
+
+public class TestGroups extends BaseTest {
 
 	
 	@Test(groups = {"Smoke"})

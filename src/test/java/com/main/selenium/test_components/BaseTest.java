@@ -34,15 +34,19 @@ public abstract class BaseTest {
 		} catch (IOException e) {
 			System.out.println("File doesn't exists");
 		}
+		
+		String browser = System.getProperty("browser") != null ?
+				System.getProperty("browser") :
+					properties.getProperty("browser");
 
-		switch (properties.getProperty("browser")) {
+		switch (browser.toLowerCase()) {
 		case "chrome": {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			break;
 		}
 		case "firefox": {
-			WebDriverManager.firefoxdriver().setup();
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			break;
 		}

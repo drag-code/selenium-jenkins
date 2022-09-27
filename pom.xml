@@ -29,7 +29,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.6.1</version>
-			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
 		<dependency>
@@ -81,11 +80,83 @@
 
 
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>ExtentReports</id>
+			<build>
+				<pluginManagement>
+					<!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.0.0-M7</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>suites/extentReports.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		<profile>
+			<id>Regression</id>
+			<build>
+				<pluginManagement>
+					<!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.0.0-M7</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>suites/regression.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		<profile>
+			<id>Groups</id>
+			<build>
+				<pluginManagement>
+					<!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.0.0-M7</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>suites/groups.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+	</profiles>
 
 	<build>
 		<pluginManagement>
 			<!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
 			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M7</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>suites/regression.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
 				<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>

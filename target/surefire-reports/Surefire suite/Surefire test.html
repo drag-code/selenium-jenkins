@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 09 12:41:56 CDT 2022</td>
+<td>Started on:</td><td>Mon Sep 26 22:46:06 CDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4250 ms)</td>
+<tr><td>Total time:</td><td>165 seconds (165947 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,244 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.main.selenium.practices.TestExtentReports.testFailedOrders()'><b>testFailedOrders</b><br>Test class: com.main.selenium.practices.TestExtentReports</td>
+<td><div><pre>java.lang.AssertionError: Values are not equal expected [3546] but found [3546540]
+	at com.main.selenium.practices.TestExtentReports.testFailedOrders(TestExtentReports.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace149526537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace149526537'><pre>java.lang.AssertionError: Values are not equal expected [3546] but found [3546540]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at com.main.selenium.practices.TestExtentReports.testFailedOrders(TestExtentReports.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>3</td>
+<td>com.main.selenium.practices.TestExtentReports@1f0f1111</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestListeners.failureTest()'><b>failureTest</b><br>Test class: com.main.selenium.practices.TestListeners</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#badId&quot;}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;LAPTOP-BL8V5H57&apos;, ip: &apos;192.168.1.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fa10d9b91a956fe1955ef0df6ef899dc, findElement {using=id, value=badId}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\cacha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49538/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa10d9b91a956fe1955ef0df6ef899dc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.main.selenium.practices.TestListeners.failureTest(TestListeners.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1453347620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1453347620'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#badId&quot;}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;LAPTOP-BL8V5H57&apos;, ip: &apos;192.168.1.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fa10d9b91a956fe1955ef0df6ef899dc, findElement {using=id, value=badId}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\cacha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49538/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa10d9b91a956fe1955ef0df6ef899dc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.main.selenium.practices.TestListeners.failureTest(TestListeners.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>5</td>
+<td>com.main.selenium.practices.TestListeners@96def03</td></tr>
+<tr>
+<td title='com.main.selenium.practices.HttpTest.testBrokenLink()'><b>testBrokenLink</b><br>Test class: com.main.selenium.practices.HttpTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	The link https://rahulshettyacademy.com/brokenlink is broken expected [true] but found [false]
+	at com.main.selenium.practices.HttpTest.testBrokenLink(HttpTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace532297836", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace532297836'><pre>java.lang.AssertionError: The following asserts failed:
+	The link https://rahulshettyacademy.com/brokenlink is broken expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.main.selenium.practices.HttpTest.testBrokenLink(HttpTest.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>9</td>
+<td>com.main.selenium.practices.HttpTest@29176cc1</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestParams.WebLoginHome()'><b>WebLoginHome</b><br>Test class: com.main.selenium.practices.TestParams</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method WebLoginHome but has not been marked @Optional or defined
+
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1862946352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1862946352'><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method WebLoginHome but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestParams@1ed1993a</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +314,130 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.main.selenium.practices.ScrollingTest.testAmountCount()'><b>testAmountCount</b><br>Test class: com.main.selenium.practices.ScrollingTest</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.ScrollingTest@778d1062</td></tr>
+<tr>
+<td title='com.main.selenium.practices.StreamsTest.testGetThePriceOfProductPaginated()'><b>testGetThePriceOfProductPaginated</b><br>Test class: com.main.selenium.practices.StreamsTest</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.StreamsTest@670002</td></tr>
+<tr>
+<td title='com.main.selenium.practices.LinksCountTest.testLinksCountInFooter()'><b>testLinksCountInFooter</b><br>Test class: com.main.selenium.practices.LinksCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.LinksCountTest@2b6faea6</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestGroups.WebLoginHome()'><b>WebLoginHome</b><br>Test class: com.main.selenium.practices.TestGroups</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestGroups@6e0dec4a</td></tr>
+<tr>
+<td title='com.main.selenium.practices.StreamsTest.testGetThePriceOfProduct()'><b>testGetThePriceOfProduct</b><br>Test class: com.main.selenium.practices.StreamsTest</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.StreamsTest@670002</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestNewFeatures.testPartialScreenshot()'><b>testPartialScreenshot</b><br>Test class: com.main.selenium.practices.TestNewFeatures</td>
+<td></td>
+<td>1</td>
+<td>com.main.selenium.practices.TestNewFeatures@5ccddd20</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestNewFeatures.testMultipleWindows()'><b>testMultipleWindows</b><br>Test class: com.main.selenium.practices.TestNewFeatures</td>
+<td></td>
+<td>4</td>
+<td>com.main.selenium.practices.TestNewFeatures@5ccddd20</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestGroups.Login()'><b>Login</b><br>Test class: com.main.selenium.practices.TestGroups</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestGroups@6e0dec4a</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestNewFeatures.testAboveLocator()'><b>testAboveLocator</b><br>Test class: com.main.selenium.practices.TestNewFeatures</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestNewFeatures@5ccddd20</td></tr>
+<tr>
+<td title='com.main.selenium.practices.LinksCountTest.testLinksCountInFooterFirstColumn()'><b>testLinksCountInFooterFirstColumn</b><br>Test class: com.main.selenium.practices.LinksCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.LinksCountTest@2b6faea6</td></tr>
+<tr>
 <td title='com.main.selenium.selenium.NewTest.f()'><b>f</b><br>Test class: com.main.selenium.selenium.NewTest</td>
 <td></td>
 <td>0</td>
-<td>com.main.selenium.selenium.NewTest@161b062a</td></tr>
+<td>com.main.selenium.selenium.NewTest@1f3f4916</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestParams.Login()'><b>Login</b><br>Test class: com.main.selenium.practices.TestParams</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestParams@1ed1993a</td></tr>
+<tr>
+<td title='com.main.selenium.practices.LinksCountTest.testLinksCount()'><b>testLinksCount</b><br>Test class: com.main.selenium.practices.LinksCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.LinksCountTest@2b6faea6</td></tr>
+<tr>
+<td title='com.main.selenium.practices.LinksCountTest.testLinksAreWorkingInFooterFirstColumn()'><b>testLinksAreWorkingInFooterFirstColumn</b><br>Test class: com.main.selenium.practices.LinksCountTest</td>
+<td></td>
+<td>5</td>
+<td>com.main.selenium.practices.LinksCountTest@2b6faea6</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestListeners.test1()'><b>test1</b><br>Test class: com.main.selenium.practices.TestListeners</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestListeners@96def03</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestParams.WebLoginCar()'><b>WebLoginCar</b><br>Test class: com.main.selenium.practices.TestParams</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestParams@1ed1993a</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestListeners.test3()'><b>test3</b><br>Test class: com.main.selenium.practices.TestListeners</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestListeners@96def03</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestGroups.WebLoginCar()'><b>WebLoginCar</b><br>Test class: com.main.selenium.practices.TestGroups</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestGroups@6e0dec4a</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestListeners.test2()'><b>test2</b><br>Test class: com.main.selenium.practices.TestListeners</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestListeners@96def03</td></tr>
+<tr>
+<td title='com.main.selenium.practices.StreamsTest.testSearchFeature()'><b>testSearchFeature</b><br>Test class: com.main.selenium.practices.StreamsTest</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.StreamsTest@670002</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestNewFeatures.testHeightAndWidth()'><b>testHeightAndWidth</b><br>Test class: com.main.selenium.practices.TestNewFeatures</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestNewFeatures@5ccddd20</td></tr>
+<tr>
+<td title='com.main.selenium.practices.StreamsTest.testTableIsSorted()'><b>testTableIsSorted</b><br>Test class: com.main.selenium.practices.StreamsTest</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.StreamsTest@670002</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestGroups.Good()'><b>Good</b><br>Test class: com.main.selenium.practices.TestGroups</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestGroups@6e0dec4a</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestParams.Good()'><b>Good</b><br>Test class: com.main.selenium.practices.TestParams</td>
+<td></td>
+<td>0</td>
+<td>com.main.selenium.practices.TestParams@1ed1993a</td></tr>
+<tr>
+<td title='com.main.selenium.practices.TestExtentReports.testSuccessfullOrders()'><b>testSuccessfullOrders</b><br>Test class: com.main.selenium.practices.TestExtentReports</td>
+<td></td>
+<td>3</td>
+<td>com.main.selenium.practices.TestExtentReports@1f0f1111</td></tr>
 </table><p>
 </body>
 </html>
