@@ -4,9 +4,9 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import com.main.selenium.test_components.BaseTest;
+import com.main.selenium.test_components.BaseTest2;
 
-public class TestExtentReports extends BaseTest {
+public class TestExtentReports extends BaseTest2 {
 
 	@Test()
 	public void testSuccessfullOrders() {

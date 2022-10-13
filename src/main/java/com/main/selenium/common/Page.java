@@ -30,6 +30,10 @@ public abstract class Page {
 	protected void waitForElementToAppear(By locator) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
+	
+	protected void waitForTextToAppearInElement(String text, WebElement element) {
+		wait.until(ExpectedConditions.textToBePresentInElement(element, text));
+	}
 
 	protected void waitForElementToDissapear(WebElement element) {
 		wait.until(ExpectedConditions.invisibilityOf(element));
@@ -43,7 +47,7 @@ public abstract class Page {
 		wait.until(ExpectedConditions.visibilityOfAllElements(elements));
 	}
 	
-	protected void waitFor(long miliseconds) {
+	public void waitFor(long miliseconds) {
 		try {
 			Thread.sleep(miliseconds);
 		} catch (InterruptedException e) {

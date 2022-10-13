@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,15 +16,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import com.main.selenium.pom.EcommerceLandingPage;
 import com.main.selenium.pom.LandingPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public abstract class BaseTest {
+public abstract class BaseTest2 {
 
 	public WebDriver driver;
-	protected EcommerceLandingPage landingPage;
+	protected LandingPage landingPage;
 	String URL = "https://rahulshettyacademy.com/seleniumPractise/#/";
 
 	private void initializeDriver() {
@@ -69,7 +69,7 @@ public abstract class BaseTest {
 	@BeforeMethod
 	protected void launchApp() {
 		initializeDriver();
-		landingPage = new EcommerceLandingPage(driver);
+		landingPage = new LandingPage(driver);
 		landingPage.open(URL);
 	}
 

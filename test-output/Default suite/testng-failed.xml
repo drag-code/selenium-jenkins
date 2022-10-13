@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.main.selenium.practices.FileUploadingTest">
+      <class name="ecommerce_tests.Tests">
         <methods>
-          <include name="setup"/>
+          <include name="launchApp"/>
+          <include name="productIsAddedToCartAndIsPresentWhenClickOnCartButton"/>
           <include name="teardown"/>
-          <include name="testFileDownload"/>
         </methods>
-      </class> <!-- com.main.selenium.practices.FileUploadingTest -->
+      </class> <!-- ecommerce_tests.Tests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
