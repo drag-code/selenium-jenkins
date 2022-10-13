@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-09T21:32:39 CDT" name="Default suite" finished-at="2022-09-09T21:32:51 CDT" duration-ms="11959">
+  <suite started-at="2022-10-11T16:42:50 CDT" name="Default suite" finished-at="2022-10-11T16:43:25 CDT" duration-ms="35613">
     <groups>
     </groups>
-    <test started-at="2022-09-09T21:32:39 CDT" name="Default test" finished-at="2022-09-09T21:32:51 CDT" duration-ms="11959">
-      <class name="com.main.selenium.practices.LinksCountTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.main.selenium.practices.LinksCountTest@1725dc0f]" started-at="2022-09-09T21:32:39 CDT" name="setup" finished-at="2022-09-09T21:32:50 CDT" duration-ms="10882" status="PASS">
+    <test started-at="2022-10-11T16:42:50 CDT" name="Default test" finished-at="2022-10-11T16:43:25 CDT" duration-ms="35613">
+      <class name="com.main.selenium.practices.FileUploadingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.main.selenium.practices.FileUploadingTest@4a883b15]" started-at="2022-10-11T16:42:50 CDT" name="setup" finished-at="2022-10-11T16:42:53 CDT" duration-ms="3540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLinksCount()[pri:0, instance:com.main.selenium.practices.LinksCountTest@1725dc0f]" started-at="2022-09-09T21:32:50 CDT" name="testLinksCount" finished-at="2022-09-09T21:32:50 CDT" duration-ms="321" status="PASS">
+        <test-method signature="testFileDownload()[pri:0, instance:com.main.selenium.practices.FileUploadingTest@4a883b15]" started-at="2022-10-11T16:42:53 CDT" name="testFileDownload" finished-at="2022-10-11T16:43:25 CDT" duration-ms="31512" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLinksCount -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.main.selenium.practices.LinksCountTest@1725dc0f]" started-at="2022-09-09T21:32:50 CDT" name="teardown" finished-at="2022-09-09T21:32:51 CDT" duration-ms="704" status="PASS">
+        </test-method> <!-- testFileDownload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.main.selenium.practices.FileUploadingTest@4a883b15]" started-at="2022-10-11T16:43:25 CDT" name="teardown" finished-at="2022-10-11T16:43:25 CDT" duration-ms="470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.main.selenium.practices.LinksCountTest -->
+      </class> <!-- com.main.selenium.practices.FileUploadingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
